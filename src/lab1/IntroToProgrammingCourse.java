@@ -15,10 +15,6 @@ public class IntroToProgrammingCourse extends Course {
     private String courseNumber;
     private double credits;
 
-    public String getCourseNumber() {
-        return courseNumber;
-    }
-
     public void setCredits(double credits) {
         if (credits < 0.5 || credits > 4.0) {
             JOptionPane.showMessageDialog(null,
@@ -30,15 +26,6 @@ public class IntroToProgrammingCourse extends Course {
 
     public String getCourseName() {
         return courseName;
-    }
-
-    public final void setCourseName(String courseName) {
-        if (courseName == null || courseName.length() == 0) {
-            JOptionPane.showMessageDialog(null,
-                    "Error: courseName cannot be null of empty string");
-            System.exit(0);
-        }
-        this.courseName = courseName;
     }
 
     public IntroToProgrammingCourse(String courseName, String courseNumber) {

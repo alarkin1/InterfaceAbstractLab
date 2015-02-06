@@ -12,19 +12,7 @@ public class IntroJavaCourse extends Course {
     private String courseNumber;
     private double credits;
     private String prerequisites;
-
-    public String getCourseNumber() {
-        return courseNumber;
-    }
-
-//    public void setCourseNumber(String courseNumber) {
-//        this.courseNumber = courseNumber;
-//    }
-
-//    public double getCredits() {
-//        return credits;
-//    }
-
+    
     public String getPrerequisites() {
         return prerequisites;
     }
